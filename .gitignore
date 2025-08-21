@@ -39,6 +39,7 @@ kernel.errors*
 video_*/
 
 # Modele / wagi
+models/
 model_kp/
 *.pt
 *.onnx
@@ -50,3 +51,8 @@ model_kp/
 
 # Sekrety
 .env
+
+# Zostaw w repo
+!README*
+!data.yaml
+
