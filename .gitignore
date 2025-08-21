@@ -1,0 +1,52 @@
+# Python / env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDE / system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dane i wyniki (Twoje foldery)
+runs/
+klatki/
+klatki2_640x640/
+Large/
+Large_raw/
+Small/
+Small_raw/
+train/
+valid/
+test/
+out/
+logs/
+*.log
+kernel.errors*
+
+# Wideo
+*.mp4
+*.avi
+video_*/
+
+# Modele / wagi
+model_kp/
+*.pt
+*.onnx
+*.xml
+*.bin
+
+# Notatniki
+.ipynb_checkpoints/
+
+# Sekrety
+.env

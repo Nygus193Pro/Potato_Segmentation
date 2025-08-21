@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potato Tracker</title>
+</head>
+<body>
+    <h1>System Sledzenia Ziemniakow</h1>
+
+    <button onclick="sendCommand('/start')">Start</button>
+    <button onclick="sendCommand('/stop')">Stop</button>
+
+    <br><br>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+
+    <script>
+        function sendCommand(url) {
+            fetch(url, { method: 'POST' });
+        }
+    </script>
+</body>
+</html>
+
+
