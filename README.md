@@ -1,4 +1,4 @@
-﻿# Potato Segmentation — Demo (OpenVINO IR)
+﻿# Potato Segmentation — Demo (Ultralytics, Twój model)
 
 ## Wymagania
 - Python 3.12
@@ -12,10 +12,10 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install --upgrade pip
 pip install -r requirements.txt
-Uruchomienie (model ziemniaków — OpenVINO)
-python -m ultralytics predict model=assets/models/best.xml source=assets/videos/demo.mp4 show=True
-Uwagi
+Uruchomienie: 
+yolo predict model=assets/models/best.pt source=assets/videos/demo.mp4 show=True
+Uwaga
 
-Model IR to para plików: assets/models/best.xml + assets/models/best.bin.
+Model jest w repo: assets/models/best.pt (nie trzeba pobierać osobno).
 
-Wyniki zapisywane są do runs/segment/predict.
+Wyniki zapisują się do runs/segment/predict.
