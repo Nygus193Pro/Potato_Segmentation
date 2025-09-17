@@ -23,3 +23,6 @@ runs/
 *.tiff
 *.npy
 *.npz
+# allow OpenVINO IR in repo
+!assets/models/*.xml
+!assets/models/*.bin

@@ -33,3 +33,4 @@ ultralytics==8.3.201
 ultralytics-thop==2.0.17
 urllib3==2.5.0
 wheel==0.45.1
+openvino

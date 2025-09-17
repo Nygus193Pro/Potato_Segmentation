@@ -1,27 +1,21 @@
-﻿# Potato Segmentation — Demo + Python Sources
-
-Prosty projekt testowy YOLO (segmentacja) na wideo demo.
+﻿# Potato Segmentation — Demo (OpenVINO IR)
 
 ## Wymagania
 - Python 3.12
 - Git
-- (opcjonalnie) karta graficzna z CUDA
 
 ## Instalacja (Windows, PowerShell)
-~~~powershell
+```powershell
 git clone https://github.com/Nygus193Pro/Potato_Segmentation.git
 cd Potato_Segmentation
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install --upgrade pip
 pip install -r requirements.txt
-~~~
+Uruchomienie (model ziemniaków — OpenVINO)
+python -m ultralytics predict model=assets/models/best.xml source=assets/videos/demo.mp4 show=True
+Uwagi
 
-## Uruchomienie demo
-~~~powershell
-yolo predict model=yolo11n-seg.pt source=assets/videos/demo.mp4
-~~~
+Model IR to para plików: assets/models/best.xml + assets/models/best.bin.
 
-## Uwaga
-- Plik `assets/videos/demo.mp4` jest w repo i wymagany do testu.
-- Foldery z danymi, wagami i wynikami (`runs/`, `*.pt`, `train/`, `valid/` itd.) są ignorowane przez `.gitignore`.
+Wyniki zapisywane są do runs/segment/predict.
