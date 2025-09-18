@@ -1,28 +1,86 @@
-PotatoSegmentation
-Projekt do detekcji i segmentacji ziemniaków w wideo z u¿yciem OpenVINO (YOLO). Œledzi ziemniaki, kategoryzuje je na Small/Large i zapisuje obrazki z maskami.
+ï»¿Projekt PotatoSegmentation
+
+Projekt wykrywa i segmentuje ziemniaki na wideo za pomocÄ… OpenVINO (YOLO). Klasyfikuje ziemniaki na kategorie (MaÅ‚e/DuÅ¼e) i generuje maski. WyobraÅºnia to podstawa!
+
 Wymagania
 
+
+
+
+
 Python 3.8+ (zalecany 3.10+)
+
+
+
 Git
-Modele OpenVINO (best.xml, best.bin) w assets/models/
-Wideo (np. demo.mp4) w assets/videos/
+
+
+
+Model OpenVINO (best.xml, best.bin) w assets/models/Wideo (np. demo.mp4) w assets/videos/Instalacja
+
 Instalacja
-1. Sklonuj repo:
+
+
+
+
+
+Sklonuj repozytorium:
+
 git clone https://github.com/Nygus193Pro/Potato_Segmentation.git
 cd PotatoSegmentation
-2. Utwórz i aktywuj œrodowisko
-python -m venv venv
-# Windows:
+
+
+
+UtwÃ³rz i aktywuj Å›rodowisko wirtualne:
+
+
+
+
+
+Windows:
+
 venv\Scripts\activate
-# Linux/macOS:
-source venv/bin/activate
-3. Zainstaluj zale¿noœci
+
+
+
+Linux/macOS:
+
+source venv/bin/activate 3
+
+
+
+Zainstaluj zaleÅ¼noÅ›ci:
+
 pip install -r requirements.txt
-4. Uruchomienie
+
+
+
+Uruchom skrypt:
+
 python start_processing.py
 
-Okno 640x640 poka¿e detekcje (zielone kontury, czerwone centroidy, ID). Naciœnij 'q' by wyjœæ.
-Ziemniaki s¹ zapisywane do Small/, Large/, Small_raw/, Large_raw/
+Wyniki
+
+Okno 640x640 pokazuje wykryte ziemniaki (obrys, centroid, ID). NaciÅ›nij 'q', aby wyjÅ›Ä‡. Wyniki sÄ… zapisywane w:
+
+
+
+
+
+Small/
+
+
+
+Large/
+
+
+
+Small_raw/
+
+
+
+Large_raw/
 
 Licencja
-MIT License
+
+Licencja MIT
