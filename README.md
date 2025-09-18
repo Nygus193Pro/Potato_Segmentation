@@ -44,7 +44,7 @@ source venv/bin/activate
 
 4. Uruchom aplikację:
    ```bash
-   python start_processing.py
+   python test_tracker.py
    ```
 
 ## Działanie
