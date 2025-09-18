@@ -1,4 +1,4 @@
-﻿from test_tracker import MainProgram
+from potato_tracker import MainProgram
 
 program = MainProgram(
     model_path="assets/models/best.xml",

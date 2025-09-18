@@ -300,7 +300,7 @@ class MainProgram:
         self.model_handler.load_model()
 
         while True:
-            # sprawdzanie czy program ma działać (Redis lub lokalnie)
+            # sprawdzanie, czy program ma działać (Redis lub lokalnie)
             if self.use_redis:
                 try:
                     cmd = self.redis_client.get('command')
@@ -322,6 +322,9 @@ class MainProgram:
             ret, frame = self.cap.read()
             if not ret:
                 break
+
+            # Zmiana: Resize frame do 640x640 na wejściu, aby całe przetwarzanie było na małym obrazie
+            frame = cv2.resize(frame, (640, 640))
 
             clean_frame = frame.copy()
             boxes, scores, class_ids, masks = self.model_handler.predict(frame)
