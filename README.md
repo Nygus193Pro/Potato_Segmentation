@@ -19,7 +19,7 @@ Video → YOLO (OpenVINO) → Segmentacja → Kategoryzacja (Small/Large) → Za
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/Nygus193Pro/Potato_Segmentation.git
-   cd PotatoSegmentation
+   cd Potato_Segmentation
    ```
 
 2. Utwórz i aktywuj środowisko wirtualne:

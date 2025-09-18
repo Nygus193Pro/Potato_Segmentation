@@ -17,7 +17,6 @@ runs/
 !assets/videos/demo.mp4
 *.jpg
 *.jpeg
-*.png
 *.bmp
 *.tif
 *.tiff
